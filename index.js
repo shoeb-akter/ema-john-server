@@ -10,7 +10,9 @@ app.use(express.json());
 app.use(cors());
 const port = 5000;
 
-
+app.get('get', (req, res)=><{
+    res.send("hello from DB,It's Working")
+})
 
 
 
